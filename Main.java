@@ -162,7 +162,7 @@ public class Main {
                     + ", cena: " + transaction.price()
                     + ", data: " + transaction.date();
         } else {
-            return "Nieznana transakcja";
+            return "Nieznany typ transakcji";
         }
     }
 
@@ -276,7 +276,7 @@ public class Main {
 
                     if (latest.isPresent()) {
                         StockPrice stockPrice = latest.get();
-                        portfolio = portfolio.buy(company, quantity, stockPrice.price(), stockPrice.date());
+                        portfolio = portfolio.buy(company, quantity, stockPrice.price(), LocalDate.now());
                         System.out.println("Kupiono akcje spółki " + company + " po cenie " + stockPrice.price());
                     } else {
                         System.out.println("Nie znaleziono takiej spółki.");
@@ -300,7 +300,7 @@ public class Main {
 
                     if (latest.isPresent()) {
                         StockPrice stockPrice = latest.get();
-                        portfolio = portfolio.sell(company, quantity, stockPrice.price(), stockPrice.date());
+                        portfolio = portfolio.sell(company, quantity, stockPrice.price(), LocalDate.now());
                     } else {
                         System.out.println("Nie znaleziono takiej spółki.");
                     }
