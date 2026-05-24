@@ -1,6 +1,6 @@
 Opis projektu
 
-Projekt przedstawia prosty symulator giełdowy napisany w języku Java. Program umożliwia przeglądanie danych giełdowych różnych spółek, kupowanie i sprzedawanie akcji oraz śledzenie wartości portfela inwestora. Aplikacja działa w konsoli i została stworzona w celu pokazania wykorzystania elementów programowania funkcyjnego w języku Java.
+Projekt przedstawia prosty symulator giełdowy napisany w języku Java. Program umożliwia przeglądanie danych giełdowych różnych spółek, kupowanie i sprzedawanie akcji oraz śledzenie wartości portfela inwestora. Aplikacja działa w konsoli.
 
 Funkcjonalności
 wyświetlanie dostępnych spółek
